@@ -23,19 +23,24 @@ class Router
         $uri = $this->getURI();
 
         foreach($this->routes as $uriPattern => $path){
-            if(preg_match("~$uriPattern~", $uri)){
-                $segments = explode('/',$path); //Разбиваем строку разделителем '/'
-                $controllerName = array_shift($segments).'Controller'; //Извлекаем первое значение из массива
+            if(preg_match("~^$uriPattern~", $uri)){
+
+                $internalRoute = preg_replace("~^$uriPattern~", $path ,$uri);
+
+                $segments = explode('/', $internalRoute); //Разбиваем строку разделителем '/'
+                $controllerName = array_shift($segments) .'Controller'; //Извлекаем первое значение из массива
                 $controllerName = ucfirst($controllerName); //Первый знак в верхнем регистре
 
-                $actionName = 'action'.ucfirst(array_shift($segments));
+                $actionName = 'action'. ucfirst(array_shift($segments));
+
+                $parameters = $segments;
 
                 $controllerFile = ROOT . '/controllers/' . $controllerName . '.php'; //Путь к файлу
                 if(file_exists($controllerFile)){
                     include_once($controllerFile);
                 }
                 $controllerObject = new $controllerName;
-                $result = $controllerObject->$actionName();
+                $result = call_user_func_array(array($controllerObject, $actionName), $parameters);//Передаем в контроллер параметры запроса
                 if($result !=null){
                     break;
                 }

@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f4841df-dce3-476f-adda-b3b08405f934" name="Default Changelist" comment="" />
+    <list default="true" id="1f4841df-dce3-476f-adda-b3b08405f934" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/NewsController.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,7 +17,11 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1USjcx66YzeUXn7FWop4VPM2pic" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -44,7 +53,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575356983406</updated>
-      <workItem from="1575357015322" duration="5819000" />
+      <workItem from="1575357015322" duration="6625000" />
+      <workItem from="1575462469778" duration="5684000" />
     </task>
     <servers />
   </component>
@@ -56,13 +66,17 @@
       <screen x="0" y="0" width="1366" height="724" />
     </state>
     <state x="519" y="284" key="Github.CreateGistDialog/0.0.1366.724@0.0.1366.724" timestamp="1575363243297" />
-    <state x="872" y="216" key="NewPhpClassDialog" timestamp="1575361400422">
+    <state x="872" y="216" key="NewPhpClassDialog" timestamp="1575469973439">
       <screen x="0" y="0" width="1366" height="724" />
     </state>
-    <state x="872" y="216" key="NewPhpClassDialog/0.0.1366.724@0.0.1366.724" timestamp="1575361400422" />
-    <state x="524" y="290" key="NewPhpFileDialog" timestamp="1575359356991">
+    <state x="872" y="216" key="NewPhpClassDialog/0.0.1366.724@0.0.1366.724" timestamp="1575469973439" />
+    <state x="524" y="290" key="NewPhpFileDialog" timestamp="1575469937692">
       <screen x="0" y="0" width="1366" height="724" />
     </state>
-    <state x="524" y="290" key="NewPhpFileDialog/0.0.1366.724@0.0.1366.724" timestamp="1575359356991" />
+    <state x="524" y="290" key="NewPhpFileDialog/0.0.1366.724@0.0.1366.724" timestamp="1575469937692" />
+    <state x="394" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1575462535420">
+      <screen x="0" y="0" width="1366" height="724" />
+    </state>
+    <state x="394" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.724@0.0.1366.724" timestamp="1575462535420" />
   </component>
 </project>
