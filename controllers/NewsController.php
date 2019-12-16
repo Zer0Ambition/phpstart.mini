@@ -8,15 +8,19 @@ class NewsController
         $newsList = array();
         $newsList = News::getNewsList();
 
-        print_r($newsList);
+        echo '<pre>';
+        var_dump($newsList);
+        echo '<pre>';
         return true;
     }
 
-    public function actionView($category, $id){
-        if($id){
+    public function actionView($id){
+        if($id) {
             $newsItem = News::getNewsItemById($id);
-            print_r($newsItem);
+            echo '<pre>';
+            var_dump($newsItem);
+            echo '<pre>';
+
+            return true;
         }
-        return true;
-}
 }
